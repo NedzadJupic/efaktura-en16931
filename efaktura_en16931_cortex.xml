@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"
+         xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+         xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+
+  <cbc:CustomizationID>urn:cen.eu:en16931:2017</cbc:CustomizationID>
+  <cbc:ProfileID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</cbc:ProfileID>
+  <cbc:ID>2025-0001</cbc:ID>
+  <cbc:IssueDate>2025-08-03</cbc:IssueDate>
+  <cbc:DueDate>2025-08-18</cbc:DueDate>
+  <cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
+  <cbc:DocumentCurrencyCode>BAM</cbc:DocumentCurrencyCode>
+
+  <cac:AccountingSupplierParty>
+    <cac:Party>
+      <cac:PartyName>
+        <cbc:Name>Cortex d.o.o.</cbc:Name>
+      </cac:PartyName>
+      <cac:PostalAddress>
+        <cbc:StreetName>Turalibegova 25A</cbc:StreetName>
+        <cbc:CityName>Tuzla</cbc:CityName>
+        <cbc:PostalZone>75000</cbc:PostalZone>
+        <cbc:Country>
+          <cbc:IdentificationCode>BA</cbc:IdentificationCode>
+        </cbc:Country>
+      </cac:PostalAddress>
+      <cac:PartyTaxScheme>
+        <cbc:CompanyID>123456789</cbc:CompanyID>
+      </cac:PartyTaxScheme>
+    </cac:Party>
+  </cac:AccountingSupplierParty>
+
+  <cac:AccountingCustomerParty>
+    <cac:Party>
+      <cac:PartyName>
+        <cbc:Name>Primjer d.o.o.</cbc:Name>
+      </cac:PartyName>
+      <cac:PostalAddress>
+        <cbc:StreetName>Neznana</cbc:StreetName>
+        <cbc:CityName>Brčko</cbc:CityName>
+        <cbc:PostalZone>76100</cbc:PostalZone>
+        <cbc:Country>
+          <cbc:IdentificationCode>BA</cbc:IdentificationCode>
+        </cbc:Country>
+      </cac:PostalAddress>
+      <cac:PartyTaxScheme>
+        <cbc:CompanyID>987654321</cbc:CompanyID>
+      </cac:PartyTaxScheme>
+    </cac:Party>
+  </cac:AccountingCustomerParty>
+
+  <cac:InvoiceLine>
+    <cbc:ID>1</cbc:ID>
+    <cbc:InvoicedQuantity unitCode="H87">1</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="BAM">1000.00</cbc:LineExtensionAmount>
+    <cac:Item>
+      <cbc:Description>Konsultantske usluge</cbc:Description>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="BAM">1000.00</cbc:PriceAmount>
+    </cac:Price>
+  </cac:InvoiceLine>
+
+  <cac:TaxTotal>
+    <cbc:TaxAmount currencyID="BAM">170.00</cbc:TaxAmount>
+  </cac:TaxTotal>
+
+  <cac:LegalMonetaryTotal>
+    <cbc:LineExtensionAmount currencyID="BAM">1000.00</cbc:LineExtensionAmount>
+    <cbc:TaxExclusiveAmount currencyID="BAM">1000.00</cbc:TaxExclusiveAmount>
+    <cbc:TaxInclusiveAmount currencyID="BAM">1170.00</cbc:TaxInclusiveAmount>
+    <cbc:PayableAmount currencyID="BAM">1170.00</cbc:PayableAmount>
+  </cac:LegalMonetaryTotal>
+
+</Invoice>
